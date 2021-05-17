@@ -8,7 +8,7 @@ IP="10.202.0.1"		#This IP is for simulated executions (with sphinx)
 
 MAV_NAME=bebop2
 
-export AEROSTACK_PROJECT=${AEROSTACK_STACK}/projects/basic_mission_bebop
+export AEROSTACK_PROJECT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/ros/melodic/lib/parrot_arsdk
 . ${AEROSTACK_STACK}/config/mission/setup.sh
 
